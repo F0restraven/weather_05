@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,7 +25,6 @@
             android:layout_weight="1"
             android:background="#00ffffff"
             android:src="@drawable/ic_loop_black_24dp"
-
             />
 
         <TextView
@@ -82,7 +82,7 @@
                     android:gravity="bottom"
                     android:layout_alignParentRight="true"
                     android:text="28°C"
-                    android:textSize="64dp"
+                    android:textSize="64sp"
                     android:textStyle="bold"
                     android:textColor="#bb000000"
                     />
@@ -98,7 +98,7 @@
             android:gravity="center|top"
             android:background="#aa33bb33"
             android:text="體感溫度 26°C"
-            android:textSize="28dp"
+            android:textSize="28sp"
             android:textColor="#fff"
             android:layout_marginHorizontal="3dp"
             />
@@ -123,8 +123,8 @@
         android:layout_weight="1"
         android:gravity="bottom"
         android:background="#00ffffff"
-        android:text="半日預報"
-        android:textSize="20dp"
+        android:text="24小時預報"
+        android:textSize="20sp"
         />
 
     <LinearLayout
@@ -141,7 +141,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="14:00"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     android:background="#66000000"
                     android:layout_marginHorizontal="1dp"
@@ -153,7 +153,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="15:00"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     android:background="#66000000"
                     android:layout_marginHorizontal="1dp"
@@ -165,7 +165,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="16:00"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     android:background="#66000000"
                     android:layout_marginHorizontal="1dp"
@@ -177,7 +177,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="17:00"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     android:background="#66000000"
                     android:layout_marginHorizontal="1dp"
@@ -189,7 +189,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="18:00"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     android:background="#66000000"
                     android:layout_marginHorizontal="1dp"
@@ -201,7 +201,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="19:00"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     android:background="#66000000"
                     android:layout_marginHorizontal="1dp"
@@ -267,7 +267,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:src="@drawable/cloud_48x"
+        android:src="@drawable/moon_48x"
         android:background="#66000000"
         android:layout_marginHorizontal="1dp"
         />
@@ -297,7 +297,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="28°C"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:background="#aad0aa22"
             android:layout_marginHorizontal="1dp"
@@ -309,7 +309,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="27°C"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:background="#aad0aa22"
             android:layout_marginHorizontal="1dp"
@@ -321,7 +321,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="26°C"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:background="#aa33bb33"
             android:layout_marginHorizontal="1dp"
@@ -333,7 +333,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="24°C"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:background="#aa33bb33"
             android:layout_marginHorizontal="1dp"
@@ -345,7 +345,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="22°C"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:background="#aa226699"
             android:layout_marginHorizontal="1dp"
@@ -357,7 +357,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="22°C"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:background="#aa226699"
             android:layout_marginHorizontal="1dp"
@@ -372,92 +372,428 @@
         android:gravity="bottom"
         android:background="#00ffffff"
         android:text="一周預報"
-        android:textSize= "20dp" />
+        android:textSize= "20sp" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3.5"
+        android:layout_weight="4"
         android:orientation="horizontal"
         >
 
-        <TextView
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:orientation="vertical"
             android:layout_marginHorizontal="2dp"
-            android:background="#aaff6666"
-            android:gravity="top"
-            android:text="星期一"
-            android:textColor="#fff"
-            android:textSize="16dp" />
+            >
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="2dp"
-            android:background="#aaff8833"
-            android:gravity="top"
-            android:text="星期二"
-            android:textColor="#fff"
-            android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aaff6666"
+                android:gravity="bottom|center"
+                android:text="今天"
+                android:textColor="#fff"
+                android:textSize="16sp" />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="2dp"
-            android:background="#aad0aa22"
-            android:gravity="top"
-            android:text="星期三"
-            android:textColor="#fff"
-            android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaff6666"
+                android:gravity="top|center_horizontal"
+                android:text="14日"
+                android:textColor="#fff"
+                android:textSize="12sp" />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="2dp"
-            android:background="#aa33bb33"
-            android:gravity="top"
-            android:text="星期四"
-            android:textColor="#fff"
-            android:textSize="16dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingTop="3dp"
+                android:background="#aaff6666"
+                android:src="@drawable/sun_48x"
+                 />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="2dp"
-            android:background="#aa55aadd"
-            android:gravity="top"
-            android:text="星期五"
-            android:textColor="#fff"
-            android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aaff6666"
+                android:gravity="center"
+                android:text="28°C"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="2dp"
-            android:background="#aa224499"
-            android:gravity="top"
-            android:text="星期六"
-            android:textColor="#fff"
-            android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aaff6666"
+                android:gravity="center"
+                android:text="17°C"
+                android:textColor="#fff"
+                android:textSize="16sp" />
 
-        <TextView
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:orientation="vertical"
             android:layout_marginHorizontal="2dp"
-            android:background="#aa9922bb"
-            android:gravity="top"
-            android:text="星期天"
-            android:textColor="#fff"
-            android:textSize="16dp" />
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aaff8833"
+                android:gravity="bottom|center"
+                android:text="週四"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaff8833"
+                android:gravity="top|center_horizontal"
+                android:text="15日"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingTop="3dp"
+                android:background="#aaff8833"
+                android:src="@drawable/suncloud_48x"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aaff8833"
+                android:gravity="center"
+                android:text="28°C"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aaff8833"
+                android:gravity="center"
+                android:text="17°C"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="2dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aad0aa22"
+                android:gravity="bottom|center"
+                android:text="週五"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#aad0aa22"
+                android:gravity="top|center_horizontal"
+                android:text="16日"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingTop="3dp"
+                android:background="#aad0aa22"
+                android:src="@drawable/cloud_48x"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aad0aa22"
+                android:gravity="center"
+                android:text="28°C"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aad0aa22"
+                android:gravity="center"
+                android:text="17°C"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="2dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aa33bb33"
+                android:gravity="bottom|center"
+                android:text="週六"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#aa33bb33"
+                android:gravity="top|center_horizontal"
+                android:text="17日"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingTop="3dp"
+                android:background="#aa33bb33"
+                android:src="@drawable/rain_48x"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aa33bb33"
+                android:gravity="center"
+                android:text="28°C"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aa33bb33"
+                android:gravity="center"
+                android:text="17°C"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="2dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aa55aadd"
+                android:gravity="bottom|center"
+                android:text="週日"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#aa55aadd"
+                android:gravity="top|center_horizontal"
+                android:text="18日"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingTop="3dp"
+                android:background="#aa55aadd"
+                android:src="@drawable/heavyrain_48x"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aa55aadd"
+                android:gravity="center"
+                android:text="28°C"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aa55aadd"
+                android:gravity="center"
+                android:text="17°C"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="2dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aa224499"
+                android:gravity="bottom|center"
+                android:text="週一"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#aa224499"
+                android:gravity="top|center_horizontal"
+                android:text="19日"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingTop="3dp"
+                android:background="#aa224499"
+                android:src="@drawable/lighting_48x"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aa224499"
+                android:gravity="center"
+                android:text="28°C"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aa224499"
+                android:gravity="center"
+                android:text="17°C"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="2dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aa9922bb"
+                android:gravity="bottom|center"
+                android:text="週二"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#aa9922bb"
+                android:gravity="top|center_horizontal"
+                android:text="20日"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingTop="3dp"
+                android:background="#aa9922bb"
+                android:src="@drawable/snow_48x"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aa9922bb"
+                android:gravity="center"
+                android:text="28°C"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#aa9922bb"
+                android:gravity="center"
+                android:text="17°C"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -474,16 +810,34 @@
         android:orientation="horizontal"
         >
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="8"
-        android:background="#002244" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#002244"
+            android:src="@drawable/ic_brightness_medium_black_24dp"
+            />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="1"
+            android:background="#002244"
+            android:src="@drawable/ic_photo_camera_black_24dp"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#002244"
+            android:src="@drawable/ic_person_black_24dp"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:background="#002244"
             android:src="@drawable/ic_settings_black_24dp"
             />
